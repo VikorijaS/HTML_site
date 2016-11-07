@@ -1,6 +1,9 @@
+
+
 body, html{
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   font-family: 'Noto Sans', sans-serif;
 }
 nav ul li {
@@ -24,4 +27,40 @@ nav ul {
   background-color: #FF5733;
   font-size: 16px;
   opacity: 0.5;
+=======
+  width: 100%;
+}
+
+header{
+background: url("https://pixabay.com/static/uploads/photo/2015/12/08/00/26/coffee-shop-1081713_960_720.jpg");
+ background-repeat: no-repeat;
+height: 450px;
+width:100%;
+
+}
+.coverDiv{
+	width: 100% ;
+	height: 450px;
+	position: relative;
+}
+
+
+.logo{
+	width: 50px ;
+	height: auto;
+	position: absolute;
+	left: 37%;
+	top:60%;
+
+}
+
+
+.logoText{
+	position: absolute;
+	left: 30%;
+	top:70%;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+>>>>>>> 1d5fe88b46f372ffb4ea34ba1692e6f816d1e25d
 }
