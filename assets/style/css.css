@@ -3,9 +3,11 @@
 body, html{
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
+
   font-family: 'Noto Sans', sans-serif;
 }
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
 nav ul li {
   list-style-type: none;
   padding: 5px;
