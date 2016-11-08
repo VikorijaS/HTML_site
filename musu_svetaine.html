@@ -17,7 +17,7 @@
         <header>
         <div class="coverDiv">
         <img class="logo" src="http://cliparts.co/cliparts/8TA/6Az/8TA6AzaGc.png" alt="logo" />
-        <p class="logoText"> Welcoming for coffe lovers. </p>
+        <p class="logoText"> Welcoming for coffee lovers. </p>
         </div>
        <!--  <img src="https://pixabay.com/static/uploads/photo/2015/12/08/00/26/coffee-shop-1081713_960_720.jpg" alt="cover" />-->
         </header>
@@ -46,25 +46,45 @@
                  <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
                  </p>
                  </div>
+                 </div>
+
 
 
               <div class="section3">
-               <div id="footer">
-                 <iframe width="300" height="315" src="https://www.youtube.com/embed/0R5hNmFvK1I" frameborder="0" allowfullscreen></iframe>
-                 <video src=""></video>
-               </div>
-               
+
+              
+
                <div class="getApp">
                <h>Get the App today</h>
                <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.</p>
-               <div id="container">
-<div id="apple" class="button"><h1> img src="http://incitrio.com/wp-content/uploads/2015/01/Apple_gray_logo.png" alt="apple" </h1></div>
-<h1 id="count">1</h1>
-<div id="android" class="button"><h1> </h1></div>
-<div id="windows" class="button"><h1> </h1></div>
+               </div>
+
+<div class="appButtons"> 
+
+<div id="apple" class="button">
+<a id="link1" href="http://www.apple.com/lt/"></a>
+<img src="http://incitrio.com/wp-content/uploads/2015/01/Apple_gray_logo.png" alt="apple" />
 </div>
+
+<div id="android" class="button"><img src="https://crackberry.com/sites/crackberry.com/files/styles/large/public/topic_images/2013/ANDROID.png?itok=xhm7jaxS" alt="android"/>
+<a id="link2" href="https://www.android.com/"></a>
+</div>
+
+<div id="windows" class="button"><img src="https://pbs.twimg.com/profile_images/571398080688181248/57UKydQS.png" alt="windows" />
+<a id="link3" href="https://www.windows.com/"></a>
+</div>
+
+</div>
+ <div class="footer">
+                 <iframe width="300" height="315" src="https://www.youtube.com/embed/0R5hNmFvK1I" frameborder="0" allowfullscreen></iframe>
+                 <video src=""></video>
                </div>
+
+               
                </div>
+
+             
+              
 
 
                <div class="slider">
@@ -103,6 +123,13 @@
                    x[myIndex-1].style.display = "block";
                    setTimeout(carousel, 3000); // Change image every 2 seconds
                }
+
+                var buttonApple = document.getElementById("apple");
+      buttonApple.addEventListener("mousedown", function(event) {
+        buttonPlius.style.boxShadow = "20px 20px black";
+       
+      //  event.preventDefault();
+      });
 
                </script>
 
