@@ -6,9 +6,6 @@ body, html{
 
   font-family: 'Noto Sans', sans-serif;
 }
-main {
-  height: 1000px;
-}
 
 nav ul li {
   list-style-type: none;
@@ -25,23 +22,48 @@ nav ul {
 .section3{
   position: relative;
     width: 100%;
-    height: 50px;
+    height: 300px;
 }
 
-#footer {
-    position: absolute;
-    right:0%;
-    width: 40%;
-    height: 50px;
+.footer {
+
+    float:right;
+    width: 50%;
 
   }
 .getApp{
+     position: relative;
+    float: left;
+    width: 50%;
+    font-size: 10px;
+}
+.buttonLogo{
+  width: 50px;
+  height: auto;
+}
+/*.appButtons{
+
+  bottom:0%;
+  left:0%;
+  width:50%;
+  height: 50%;
+}
+#apple{
 
     left:0%;
-    width: 40%;
-    height: 50px;
-    font-size: 14px;
+    width: 33%;
 }
+#android{
+
+    left:33%;
+    width: 33%;
+}
+#windows{
+
+    left:66%;
+    width: 33%;
+}
+*/
 #footerStyle {
   background-color: #FF5733;
   font-size: 16px;
@@ -49,16 +71,19 @@ nav ul {
   width: 100%;
 }
 
-/*header{*/
-
-/*height: 450px;*/
-/*width:100%;*/
-
-/*}*/
+.coverImg{
+ background: #efefef url("../images/coffee3.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: fixed top;
+ height: auto;;
+ width: 100%;
+ /*body {
+   background: #efefef url("../images/fonas.png") no-repeat fixed top right;
+   background-size: cover;*/
+}
 .coverDiv{
-  background: url("https://pixabay.com/static/uploads/photo/2015/12/08/00/26/coffee-shop-1081713_960_720.jpg");
-  background-repeat: no-repeat;
-	width: 100% ;
+	width: 500px ;
 	height: 450px;
 	position: relative;
   display: block;
@@ -76,7 +101,7 @@ nav ul {
 
 
 .logoText{
-
+	position: absolute;
 	left: 30%;
 	top:70%;
 	font-size: 18px;
@@ -85,31 +110,14 @@ nav ul {
 
 }
 
-#container1 {
-  float: left;
-  width: 33.33%;
-
+.section2{
+  position: relative;
+  width: 100%;
+  height: 300px;
 }
-
-#container2 {
-  float: left;
-  width: 33.33%;
-
-}
-
-#container3 {
-  float: left;
-  width: 33.33%;
-
-}
-
-.section2 {
-  overflow: hidden;
-}
-
-
 .firstFeature{
-
+  position: absolute;
+  width: 35%;
   height: 50%;
   left:0%;
   background-color: #d8c178;
@@ -117,34 +125,37 @@ nav ul {
   font-size: 10px;
 }
 .secondFeature{
-
+  position: absolute;
   left:0%;
   bottom:0%;
+  width: 35%;
   height: 50%;
   background-color: #d8c178;
   font-size: 10px;
 }
 .thirdFeature{
-
+  position: absolute;
   right:0%;
   top:0%;
+  width: 35%;
   height: 50%;
   background-color: #d8c178;
   font-size: 10px;
 }
 .anotherFeature{
-
+  position: absolute;
   right:0%;
   bottom:0%;
+  width: 35%;
   height: 50%;
   background-color: #d8c178;
   font-size: 10px;
 }
-
 .photo{
    position: absolute;
   right:35%;
   bottom:0%;
   top: 0%;
+  width: 30%;
   height: 100%;
 }
