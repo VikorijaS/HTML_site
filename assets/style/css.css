@@ -33,35 +33,20 @@ nav ul {
   }
 .getApp{
      position: relative;
-     top:0%;
-    left:0%;
+    float: left;
     width: 50%;
-    height: 50%;
     font-size: 10px;
 }
-.appButtons{
-  
-  bottom:0%;
-  left:0%;
-  width:50%;
-  height: 50%;
+.buttonLogo{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+     
+      text-align: center;
+     
+      cursor: pointer;
 }
-#apple{
-  
-    left:0%;
-    width: 33%;
-}
-#android{
-  
-    left:33%;
-    width: 33%;
-}
-#windows{
-  
-    left:66%;
-    width: 33%;
-}
-
+ 
 #footerStyle {
   background-color: #FF5733;
   font-size: 16px;
