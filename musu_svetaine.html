@@ -1,19 +1,18 @@
 <!Doctype html>
 <html>
    <head>
+
       <meta charset="UTF-8">
       <title>musuSvetaine</title>
           <meta name ='description' content="bus pati geriausia svetaine">
           <link rel="stylesheet" type="text/css" href="assets/style/css.css"/>
             <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
           <meta name="viewport" content="width=device=width,initial-scale=1.0">
-          <title>JavaScript</title>
-          <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+          <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
           <style>
-              .slider, .slider img, .slider div {
-                  width: 300px;  }
+          .mySlides {display:none;}
           </style>
+
         </head>
         <header>
         <div class="coverDiv">
@@ -54,6 +53,7 @@
                  <iframe width="300" height="315" src="https://www.youtube.com/embed/0R5hNmFvK1I" frameborder="0" allowfullscreen></iframe>
                  <video src=""></video>
                </div>
+               
                <div class="getApp">
                <h>Get the App today</h>
                <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.</p>
@@ -77,18 +77,35 @@
                <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
                <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
                <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+               <h2 class="w3-center">Automatic Slideshow</h2>
+
+               <div class="w3-content w3-section" style="max-width:400px" style="maxParticles:4">
+                 <img class="mySlides" src="assets/images/coffee1.jpg" style="width:100%" style="height:50px">
+                 <img class="mySlides" src="assets/images/coffee2.jpg" style="width:100%" style="height:50px">
+                 <img class="mySlides" src="assets/images/coffee3.jpg" style="width:100%" style="height:50px">
+                  <img class="mySlides" src="assets/images/coffee4.jpg" style="width:100%" style="height:50px">
+               </div>
+
+
                <script>
-                   $(document).ready(function() {
-                       $('.slider').slick({
-                           infinite: true,
-                           slidesToShow: 1,
-                           slidesToScroll: 1,
-                           dots: true
-                       });
-                   });
+               var myIndex = 0;
+               carousel();
+
+               function carousel() {
+                   var i;
+                   var x = document.getElementsByClassName("mySlides");
+                   for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                   }
+                   myIndex++;
+                   if (myIndex > x.length) {myIndex = 1}
+                   x[myIndex-1].style.display = "block";
+                   setTimeout(carousel, 3000); // Change image every 2 seconds
+               }
+
                </script>
 
-               </section>
             </main>
             <footer>
               <div id="footerStyle">
