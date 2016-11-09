@@ -4,7 +4,11 @@
 
       <meta charset="UTF-8">
       <title>musuSvetaine</title>
-          <meta name ='description' content="bus pati geriausia svetaine">
+
+      <script src="https://npmcdn.com/particlesjs@1.0.2/dist/particles.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/particles.min.js"></script>
+            <meta name ='description' content="bus pati geriausia svetaine">
           <link rel="stylesheet" type="text/css" href="assets/style/css.css"/>
             <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
           <meta name="viewport" content="width=device=width,initial-scale=1.0">
@@ -14,53 +18,58 @@
           </style>
 
         </head>
-        <header>
+        <header class="coverImg">
         <div class="coverDiv">
         <img class="logo" src="http://cliparts.co/cliparts/8TA/6Az/8TA6AzaGc.png" alt="logo" />
         <p class="logoText"> Welcoming for coffee lovers. </p>
         </div>
-       <!--  <img src="https://pixabay.com/static/uploads/photo/2015/12/08/00/26/coffee-shop-1081713_960_720.jpg" alt="cover" />-->
+
         </header>
         <body>
+          <canvas id="myCanvas"></canvas>
              <main>
                <section>
+
                  <div class="section2">
                  <img class="photo" src="https://pixabay.com/static/uploads/photo/2016/03/23/09/22/coffee-pot-1274398_960_720.jpg" alt="photo" />
                  <div class="firstFeature">
                  <h1>COFFEE</h1>
-                 <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
+                 <p class="parFont">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
                  </p>
                  </div>
                  <div class="secondFeature">
                  <h2>SYRUP</h2>
-                 <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
+                  <p class="parFont">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
                  </p>
                  </div>
                  <div class="thirdFeature">
                  <h1>ALMOND MILK</h1>
-                 <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
+                  <p class="parFont">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
                  </p>
                  </div>
                  <div class="anotherFeature">
                  <h1>ANOTHER GREAT FEATURE</h1>
-                 <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
+                  <p class="parFont">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.
                  </p>
                  </div>
                  </div>
-
-
-
-              <div class="section3">
-
-              
-
+                 <div>
+                   <p></p>
+                 </div>
+</section>
+<section>
+              <div id="section3">
                <div class="getApp">
-               <h>Get the App today</h>
-               <p>Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių.</p>
+               <h3>Get the App today</h3>
+               <pre class="app">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir
+                 grafinio dizaino pasaulyje jau nuo XVI a. pradžios.
+                 Lorem Ipsum tapo standartiniu fiktyviu tekstu,
+                 kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese
+                  ir tokiu būdu sukūrė raidžių egzempliorių.</pre>
 
+             <div id="buttons">
 
-
-<a id="link1" href="http://www.apple.com/lt/"><img class="buttonLogo" src="http://incitrio.com/wp-content/uploads/2015/01/Apple_gray_logo.png" alt="apple" /></a>
+               <a id="link1" href="http://www.apple.com/lt/"><img class="buttonLogo" src="http://incitrio.com/wp-content/uploads/2015/01/Apple_gray_logo.png" alt="apple" /></a>
 
 <a id="link1" href="https://www.android.com/"><img class="buttonLogo" src="https://crackberry.com/sites/crackberry.com/files/styles/large/public/topic_images/2013/ANDROID.png?itok=xhm7jaxS" alt="android" /></a>
 
@@ -70,29 +79,39 @@
 <a id="link3" href="https://www.windows.com/"></a>
 </div> -->
 
-</div>
- <div class="footer">
-                 <iframe width="300" height="315" src="https://www.youtube.com/embed/0R5hNmFvK1I" frameborder="0" allowfullscreen></iframe>
+                <div class="iFrame">
+                 <iframe width="300px" height="300px" src="https://www.youtube.com/embed/0R5hNmFvK1I" frameborder="0" allowfullscreen></iframe>
                  <video src=""></video>
-               </div>
 
-               
-               </div>
 
-             
-            
+
+               </div>
+             </div>
+           </div>
+</section>
+
+<section>
+<div class="slideShow">
+  <h4>Super SlideShow for coffee</h4>
+  <pre class="app">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir
+    grafinio dizaino pasaulyje jau nuo XVI a. pradžios.
+    Lorem Ipsum tapo standartiniu fiktyviu tekstu,
+    kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese
+     ir tokiu būdu sukūrė raidžių egzempliorių.</pre>
+
+<div class="slider">
                <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
                <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
                <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-               <h2 class="w3-center">Automatic Slideshow</h2>
+               <h2 class="w3-center">Check out our brand new types of coffee</h2>
 
                <div class="w3-content w3-section" style="max-width:400px" style="maxParticles:4">
-                 <img class="mySlides" src="assets/images/coffee1.jpg" style="width:100%" style="height:50px">
-                 <img class="mySlides" src="assets/images/coffee2.jpg" style="width:100%" style="height:50px">
-                 <img class="mySlides" src="assets/images/coffee3.jpg" style="width:100%" style="height:50px">
-                  <img class="mySlides" src="assets/images/coffee4.jpg" style="width:100%" style="height:50px">
-               </div>
+                 <img class="mySlides" src="assets/images/coffee1.jpg" style="width:100%" style="height:100px">
+                 <img class="mySlides" src="assets/images/coffee2.jpg" style="width:100%" style="height:100px">
+                 <img class="mySlides" src="assets/images/coffee3.jpg" style="width:100%" style="height:100px">
+                  <img class="mySlides" src="assets/images/coffee4.jpg" style="width:100%" style="height:100px">
+
 
 
                <script>
@@ -111,15 +130,27 @@
                    setTimeout(carousel, 3000); // Change image every 2 seconds
                }
 
-                var buttonApple = document.getElementById("apple");
+                var button = document.getElementById("buttonLogo");
       buttonApple.addEventListener("mousedown", function(event) {
         buttonPlius.style.boxShadow = "20px 20px black";
-       
+
       //  event.preventDefault();
       });
 
+      window.onload = function() {
+      Particles.init({
+      selector: "#myCanvas",
+      color: "#900C3F",
+      connectParticles:true,
+      speed: 4,
+      maxParticles: 300
+    });
+    };
                </script>
-
+</div>
+</div>
+</section>
+</body>
             </main>
             <footer>
               <div id="footerStyle">
@@ -132,5 +163,5 @@
               </nav>
             </div>
             </footer>
-         </body>
+
       </html>
